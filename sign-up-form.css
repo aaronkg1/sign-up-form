@@ -173,12 +173,12 @@ input {
 }
 
 input:focus{
-    border: rgb(0, 136, 255) solid 1px;
+    border: rgb(0, 136, 255) solid 2px;
     outline: none;
 }
 
 .error-message {
-    border: red solid 1px;
+    border: red solid 2px;
 }
 
 a {
