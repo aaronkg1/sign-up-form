@@ -47,10 +47,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: rgb(23, 105, 135);
-    color: rgb(240, 240, 240);
+    background-color: rgba(146, 203, 222, 0.762);
+    color: rgb(36, 36, 36);
     min-height: 100vh;
-    max-width: 66v;
+    max-width: 66vw;
     min-width: 66vw;
     grid-area: main;
 }
@@ -58,7 +58,7 @@ body {
 .logo p {
     width: 33vw;
     height: fit-content;
-    background: rgba(86, 151, 230, 0.468);
+    background: rgba(161, 173, 187, 0.468);
     white-space: nowrap;
     text-align: center;
     overflow-wrap: anywhere;
@@ -80,7 +80,6 @@ body {
     padding-top: 50px;
     padding-left: 50px;
     min-height: fit-content;
-    padding-right: 100px;
     word-wrap: normal;
 }
 
@@ -92,7 +91,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: rgb(50, 49, 49);
-    background: rgb(158, 208, 227);
+    background: rgb(200, 225, 235);
     box-shadow: 0 5px 10px rgba(63, 62, 62, 0.625);
     height: 33vh;
     min-height: 350px;
