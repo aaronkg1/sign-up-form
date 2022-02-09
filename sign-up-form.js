@@ -26,14 +26,7 @@ form.addEventListener('submit', (e) => {
         lastName.classList.remove('error-message');
     }
 
-    if (password.value.length <= 6) {
-        messages.push('Password must be longer than 6 characters');
-        password.classList.add('error-message');
-    }
-
-    if (password.validity.valid) {
-        password.classList.remove('error-message');
-    }
+  
 
     if (email.validity.valid === false) {
         messages.push('Invalid email address')
@@ -52,6 +45,15 @@ form.addEventListener('submit', (e) => {
 
     if (phone.validity.valid) {
         phone.classList.remove('error-message');
+    }
+    
+    if (password.value.length <= 6) {
+        messages.push('Password must be longer than 6 characters');
+        password.classList.add('error-message');
+    }
+
+    if (password.validity.valid) {
+        password.classList.remove('error-message');
     }
 
     if (password.value !== confirmPassword.value) {
