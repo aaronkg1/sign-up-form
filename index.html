@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;1,300&family=Domine:wght@600&family=Kanit:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script src="sign-up-form.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
@@ -21,13 +22,13 @@
             <div class="info">
                 <h2>This is not a real life service. This is a website for the ultimate skiing content. <br>Sign up <em>now</em> to get access. <br><br>You <em>won't</em> regret it!</h2>
             </div>
-            <div class="form">
+            <div class="form" id="form">
                 <p>Sign up here!</p>
-                <form action="" method="post" id="sign-up">
+                <form action="" method="post" id="sign-up" novalidate>
                     <div class="pair">
                     <div class="row">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" required autofocus>
+                        <input type="text" name="first-name" id="first-name" autofocus required>
                     </div> 
                     <div class="row">
                         <label for="last-name">Last Name</label>
@@ -41,7 +42,7 @@
                     </div>
                     <div class="row">    
                         <label for="phone">Phone Number</label>
-                        <input type="tel" required>
+                        <input type="tel" id = "phone" required>
                     </div>
                     </div>
                     <div class="pair">
@@ -50,10 +51,11 @@
                         <input type="password" name="pwd" id="pwd" required>
                     </div>
                     <div class="row">  
-                        <label for="confirmpwd">Confirm Password</label>
-                        <input type="password" name="confirmpwd" id="confirmpwd" required>
+                        <label for="confirm-pwd">Confirm Password</label>
+                        <input type="password" name="confirmpwd" id="confirm-pwd" required>
                     </div>
                     </div>
+                    <div class="error"></div>
                 </form>
             </div>
             <div class="create-account">
