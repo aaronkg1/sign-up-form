@@ -83,6 +83,9 @@ body {
     word-wrap: normal;
 }
 
+.info h2 {
+    max-width: 60%;
+}
 
 .form {
     
@@ -91,7 +94,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: rgb(50, 49, 49);
-    background: rgb(200, 225, 235);
+    background: rgba(200, 225, 235, 0.632);
     box-shadow: 0 5px 10px rgba(63, 62, 62, 0.625);
     height: 33vh;
     min-height: 350px;
