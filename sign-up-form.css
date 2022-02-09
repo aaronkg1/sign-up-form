@@ -1,0 +1,170 @@
+body {
+    background: url(IMG_7574.png) no-repeat fixed;
+    background-size: cover;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-auto-rows: minmax(100vh, 100vh);
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "logo main"
+    "logo main";
+    align-content: center;
+    width: 100%;
+
+}
+
+.logo {
+    display: flex;
+    align-content: center;
+    font-family: 'Domine', serif;
+    font-size: 5.5vw;
+    color: white;
+    position: fixed;
+    min-width: 35vw;
+    left: 0;
+    grid-area: logo;
+    
+   
+}
+
+
+.main {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(23, 105, 135);
+    color: rgb(240, 240, 240);
+    min-height: 100vw;
+    left: 35%;
+    top: 0%;
+    max-width: 100vh;
+    min-width: 100vh;
+    grid-area: main;
+}
+
+.logo p {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 33vh;
+    background: rgba(86, 151, 230, 0.468);
+    white-space:nowrap;
+    text-align: center;
+    overflow-wrap: anywhere;
+    min-width: auto;
+
+    
+}
+
+#ski-logo {
+    font-size: 6vw;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.info {
+    font-size: 0.9rem;
+    padding-top: 50px;
+    padding-left: 50px;
+    min-height: 25vh;
+    padding-right: 100px;
+}
+
+
+.form {
+    
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(50, 49, 49);
+    background: rgb(158, 208, 227);
+    box-shadow: 0 5px 10px rgba(63, 62, 62, 0.625);
+    height: 33vh;
+    min-height: 300px;
+}
+
+.form p {
+    font-size: 1.5rem;
+    font-family: 'Chivo', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: fit-content;
+}
+
+.pair {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+
+input, label {
+    display: block;
+    font-family: 'Chivo', sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    font-size: 1.1em;
+}
+
+.create-account {
+    min-height: 33vh;
+    position: relative;
+    padding-top: 50px;
+}
+
+.create-account p {
+    position: relative;
+    left: 50px;
+}
+
+.create-account button {
+    border: none;
+    font-family: 'Kanit', sans-serif;
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: rgb(9, 132, 227);
+    -webkit-box-shadow: -1px 9px 15px -9px #171515; 
+    box-shadow: -1px 9px 15px -9px #171515;
+    color: white;
+    border-radius: 5%;
+    position: relative;
+    left: 50px;
+    top: -10px;
+}
+
+input:focus{
+    border: rgb(0, 136, 255) solid 1px;
+    outline: none;
+}

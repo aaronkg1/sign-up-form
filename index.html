@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="sign-up-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;1,300&family=Domine:wght@600&family=Kanit:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="logo">
+            <p>Clearsk// <span class="material-icons" id="ski-logo">downhill_skiing</span></p>
+        </div>
+        <div class="main">
+            <div class="info">
+                <h2>This is not a real life service. This is a website for the ultimate skiing content. <br>Sign up <em>now</em> to get access. <br><br>You <em>won't</em> regret it!</h2>
+            </div>
+            <div class="form">
+                <p>Sign up here!</p>
+                <form action="" method="post" id="sign-up">
+                    <div class="pair">
+                    <div class="row">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required autofocus>
+                    </div> 
+                    <div class="row">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    </div>
+                    <div class="pair">
+                    <div class="row">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </div>
+                    <div class="row">    
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                    </div>
+                    <div class="pair">
+                    <div class="row">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd" required>
+                    </div>
+                    <div class="row">  
+                        <label for="confirmpwd">Confirm Password</label>
+                        <input type="password" name="confirmpwd" id="confirmpwd" required>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="create-account">
+                <button type="submit" form="sign-up">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
