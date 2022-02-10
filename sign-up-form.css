@@ -32,9 +32,9 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: 'Domine', serif;
-    font-size: 5.5em;
+    font-size: max(5.5vw, 3.5em);
     color: white;
-    width: clamp(500px, 34vw, 34vw);
+    width: clamp(300px, 34vw, 34vw);
     grid-area: logo;
     align-self: stretch;
    
@@ -57,13 +57,12 @@ body {
 }
 
 .logo p {
-    width: 33vw;
     height: fit-content;
     background: rgba(161, 173, 187, 0.468);
     white-space: nowrap;
     text-align: center;
     overflow: auto;
-    width: clamp(500px, 100%, 34vw);
+    width: clamp(300px, 100%, 34vw);
     
 
     
