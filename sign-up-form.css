@@ -32,11 +32,11 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: 'Domine', serif;
-    font-size: 5.5vw;
+    font-size: 5.5em;
     color: white;
-    min-width: 34vw;
+    width: clamp(500px, 34vw, 34vw);
     grid-area: logo;
-   align-self: stretch;
+    align-self: stretch;
    
 
     
@@ -62,15 +62,15 @@ body {
     background: rgba(161, 173, 187, 0.468);
     white-space: nowrap;
     text-align: center;
-    overflow-wrap: anywhere;
-    min-width: 34vw;
+    overflow: auto;
+    width: clamp(500px, 100%, 34vw);
     
 
     
 }
 
 #ski-logo {
-    font-size: 6vw;
+    font-size: 1em;
     text-align: center;
     position: relative;
     top: 10px;
