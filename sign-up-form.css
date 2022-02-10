@@ -1,7 +1,8 @@
 body {
     background: url(IMG_7574.png) no-repeat fixed;
     background-size: cover;
-    
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 * {
